@@ -80,11 +80,15 @@ img {
   width: 100%;
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 20px;
+  /* Horizontal uniquement : évite d'écraser le padding vertical des
+     <section> qui portent aussi la classe .wrap. */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 section {
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /* ---------- Surfaces givrées ---------- */
@@ -172,7 +176,8 @@ section {
 /* ---------- Hero ---------- */
 
 .hero {
-  padding: 72px 0 48px;
+  padding-top: 72px;
+  padding-bottom: 48px;
 }
 .hero h1 {
   font-size: clamp(34px, 6vw, 56px);
@@ -309,7 +314,8 @@ section {
 /* ---------- Legal / prose pages ---------- */
 
 .doc {
-  padding: 40px 0 24px;
+  padding-top: 40px;
+  padding-bottom: 24px;
 }
 .doc-card {
   padding: 40px clamp(24px, 5vw, 56px);
@@ -410,7 +416,8 @@ section {
   backdrop-filter: blur(10px);
 }
 .footer-inner {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: grid;
   gap: 22px;
 }
@@ -455,6 +462,7 @@ hr.rule {
     display: none;
   }
   section {
-    padding: 48px 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
