@@ -238,6 +238,11 @@ section {
   opacity: 0.55;
   cursor: default;
 }
+a.badge:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-card);
+}
 .pill-note {
   font-size: 13px;
   color: var(--ink50);
