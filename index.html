@@ -2,23 +2,36 @@
 <html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self' 'sha256-TtmemEMkpwelmXj3AgzF0YO4ULVsfWhvffLCbqWmMT4='; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ISO 27001 Implementer · Exam Practice &amp; QCM</title>
+    <title>ISO 27001 Implementer Exam · 500 questions &amp; mock tests</title>
     <meta
       name="description"
-      content="Prepare for the ISO/IEC 27001 Lead Implementer exam. Original questions, timed mock exams, a 12-step ISMS journey, mistakes review and flashcards. Bilingual EN/FR."
+      content="Prepare for the ISO/IEC 27001 Lead Implementer exam: 500 original questions, 6 timed mock exams of 80 questions, a 12-step ISMS journey, 90 flashcards and mistakes review. Available in 13 languages."
     />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <meta property="og:title" content="ISO 27001 Implementer" />
+    <meta property="og:title" content="ISO 27001 Implementer Exam" />
     <meta
       property="og:description"
-      content="Exam Practice & QCM for the ISO/IEC 27001 Lead Implementer exam. Original questions, mock exams, ISMS journey. EN/FR."
+      content="500 questions &amp; mock tests for the ISO/IEC 27001 Lead Implementer exam. Original questions, 6 timed mock exams, a 12-step ISMS journey. One-time purchase."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/og.png" />
+    <meta
+      property="og:url"
+      content="https://pierro0t.github.io/iso27001-implementer-site/"
+    />
+    <meta
+      property="og:image"
+      content="https://pierro0t.github.io/iso27001-implementer-site/assets/og.png"
+    />
     <meta name="theme-color" content="#F3F6F6" />
+    <!-- No-flash : fixe la langue avant le premier paint. Contenu identique sur
+         toutes les pages : il est autorisé par son hash sha256 dans la CSP. -->
     <script>
-      // No-flash: fixe la langue avant le premier paint.
       (function () {
         try {
           var s = localStorage.getItem("i27-lang");
@@ -74,20 +87,22 @@
         </h1>
         <p class="lede">
           <span class="lang-en"
-            >Original questions, timed mock exams, a 12-step ISMS build journey,
-            mistakes review and flashcards. No exam dumps, ever. Bilingual
-            EN/FR, works fully offline.</span
+            >500 original questions, 6 timed mock exams, a 12-step ISMS build
+            journey, 90 flashcards and mistakes review. No exam dumps, ever.
+            Available in 13 languages, and practice works offline.</span
           ><span class="lang-fr"
-            >Questions originales, examens blancs chronométrés, un parcours de
-            construction d'un SMSI en 12 étapes, révision des erreurs et
-            flashcards. Jamais de dumps. Bilingue EN/FR, 100 % hors ligne.</span
+            >500 questions originales, 6 examens blancs chronométrés, un
+            parcours de construction d'un SMSI en 12 étapes, 90 flashcards et la
+            révision des erreurs. Jamais de dumps. Disponible en 13 langues,
+            entraînement hors ligne.</span
           >
         </p>
         <div class="cta-row">
           <a
             class="badge"
             href="https://apps.apple.com/app/id6796437997"
-            rel="noopener"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <small class="lang-en">Download on the</small
             ><small class="lang-fr">Télécharger dans l'</small>
@@ -96,15 +111,18 @@
           <a
             class="badge"
             href="https://play.google.com/store/apps/details?id=com.pidotis.iso27001"
-            rel="noopener"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <small class="lang-en">Get it on</small
             ><small class="lang-fr">Disponible sur</small>
             <span>Google Play</span>
           </a>
           <span class="pill-note"
-            ><span class="lang-en">One-time purchase · lifetime access</span
-            ><span class="lang-fr">Achat unique · accès à vie</span></span
+            ><span class="lang-en">Free to start · one-time purchase for full access</span
+            ><span class="lang-fr"
+              >Gratuit pour commencer · achat unique pour tout débloquer</span
+            ></span
           >
         </div>
       </section>
@@ -118,11 +136,13 @@
           </h2>
           <p>
             <span class="lang-en"
-              >Six practice modes built around ISO/IEC 27001:2022, aligned with
-              the current PECB question style.</span
+              >Written against ISO/IEC 27001:2022 and Amd 1:2024, in six
+              question types: knowledge, application, scenario, best answer,
+              sequencing and error analysis.</span
             ><span class="lang-fr"
-              >Six modes d'entraînement bâtis sur l'ISO/IEC 27001:2022, alignés
-              sur le format de questions PECB actuel.</span
+              >Écrites d'après ISO/IEC 27001:2022 et l'Amd 1:2024, en six types
+              de questions : connaissance, application, scénario, meilleure
+              réponse, mise en ordre et analyse d'erreur.</span
             >
           </p>
         </div>
@@ -130,32 +150,39 @@
           <div class="glass card">
             <div class="ic">📚</div>
             <h3>
-              <span class="lang-en">Original question bank</span
-              ><span class="lang-fr">Banque de questions originale</span>
+              <span class="lang-en">500 original questions</span
+              ><span class="lang-fr">500 questions originales</span>
             </h3>
             <p>
               <span class="lang-en"
-                >Hundreds of original questions across 9 domains, with a written
-                explanation for every answer. Never exam dumps.</span
+                >Across the 9 exam domains, with a written explanation for every
+                answer and the normative reference (clause or Annex A control)
+                shown after each answer. Never exam dumps.</span
               ><span class="lang-fr"
-                >Des centaines de questions originales sur 9 domaines, avec une
-                explication rédigée pour chaque réponse. Jamais de dumps.</span
+                >Sur les 9 domaines de l'examen, avec une explication rédigée
+                pour chaque réponse et la référence normative (clause ou mesure
+                de l'annexe A) affichée après chaque réponse. Jamais de
+                dumps.</span
               >
             </p>
           </div>
           <div class="glass card">
             <div class="ic">⏱️</div>
             <h3>
-              <span class="lang-en">Timed mock exams</span
-              ><span class="lang-fr">Examens blancs chronométrés</span>
+              <span class="lang-en">6 timed mock exams</span
+              ><span class="lang-fr">6 examens blancs chronométrés</span>
             </h3>
             <p>
               <span class="lang-en"
-                >Full-length mock exams under a 3-hour clock and a 70% pass
-                threshold, just like the real thing.</span
+                >80 questions each, 3 hours, 70% pass mark, no question shared
+                between exams. No correction during the exam: change your
+                answers, flag questions to revisit, then get a detailed
+                correction at the end.</span
               ><span class="lang-fr"
-                >Examens blancs complets sous chrono de 3 h et seuil de réussite
-                à 70 %, comme le jour J.</span
+                >80 questions chacun, 3 h, seuil de réussite à 70 %, aucune
+                question commune entre examens. Pas de correction pendant
+                l'épreuve : modifiez vos réponses, marquez les questions à
+                revoir, puis obtenez une correction détaillée à la fin.</span
               >
             </p>
           </div>
@@ -167,11 +194,12 @@
             </h3>
             <p>
               <span class="lang-en"
-                >Build a fictional ISMS step by step: clauses, key points,
-                deliverables and a check at each stage.</span
+                >Build the ISMS of a fictional company, NordPay, one clause at a
+                time: key points, deliverables and a check at each step.</span
               ><span class="lang-fr"
-                >Construisez un SMSI fictif étape par étape : clauses, points
-                clés, livrables et un contrôle à chaque étape.</span
+                >Construisez le SMSI d'une entreprise fictive, NordPay, clause
+                après clause : points clés, livrables et un contrôle à chaque
+                étape.</span
               >
             </p>
           </div>
@@ -183,12 +211,12 @@
             </h3>
             <p>
               <span class="lang-en"
-                >A composite readiness score from your real practice, mock exams
-                and journey. An estimate, never a guarantee.</span
+                >A composite readiness score from your real accuracy, coverage,
+                mock exams and journey. An estimate, never a guarantee.</span
               ><span class="lang-fr"
-                >Un score de préparation composite issu de votre pratique réelle,
-                des examens et du parcours. Une estimation, jamais une
-                garantie.</span
+                >Un score de préparation composite issu de votre précision
+                réelle, de votre couverture, des examens et du parcours. Une
+                estimation, jamais une garantie.</span
               >
             </p>
           </div>
@@ -200,11 +228,14 @@
             </h3>
             <p>
               <span class="lang-en"
-                >Your mistakes are collected automatically and grouped by
-                question type, with flashcards to lock in the essentials.</span
+                >Your mistakes are collected automatically, grouped by question
+                type and dropped once you get them right. 90 flashcards, with a
+                “Review again” pile for the ones you don't know yet.</span
               ><span class="lang-fr"
-                >Vos erreurs sont collectées automatiquement et rangées par type
-                de question, avec des flashcards pour ancrer l'essentiel.</span
+                >Vos erreurs sont collectées automatiquement, rangées par type de
+                question et retirées dès que vous les réussissez. 90 flashcards,
+                avec une pile « À revoir » pour celles que vous ne maîtrisez pas
+                encore.</span
               >
             </p>
           </div>
@@ -216,43 +247,123 @@
             </h3>
             <p>
               <span class="lang-en"
-                >No account, no tracking, no ads. Your progress stays on your
-                device and is never sent anywhere.</span
+                >No account, no analytics, no ads. Your progress stays on your
+                device. Only purchases go through Apple or Google and our
+                purchase provider.</span
               ><span class="lang-fr"
-                >Pas de compte, pas de pistage, pas de publicité. Votre
-                progression reste sur votre appareil et n'est jamais
-                transmise.</span
+                >Pas de compte, pas d'outil d'analyse, pas de publicité. Votre
+                progression reste sur votre appareil. Seuls les achats passent
+                par Apple ou Google et notre prestataire d'achats.</span
               >
             </p>
           </div>
+        </div>
+
+        <div class="langs">
+          <p>
+            <span class="lang-en"
+              >Available in 13 languages, switchable instantly in the app.</span
+            ><span class="lang-fr"
+              >Disponible en 13 langues, changement instantané dans l'app.</span
+            >
+          </p>
+          <ul class="lang-list">
+            <li lang="en">English</li>
+            <li lang="fr">Français</li>
+            <li lang="es">Español</li>
+            <li lang="ar" dir="rtl">العربية</li>
+            <li lang="pt-BR">Português (Brasil)</li>
+            <li lang="pt-PT">Português (Portugal)</li>
+            <li lang="de">Deutsch</li>
+            <li lang="tr">Türkçe</li>
+            <li lang="it">Italiano</li>
+            <li lang="id">Bahasa Indonesia</li>
+            <li lang="pl">Polski</li>
+            <li lang="ja">日本語</li>
+            <li lang="nl">Nederlands</li>
+          </ul>
         </div>
       </section>
 
       <!-- Pricing -->
       <section class="wrap">
-        <div class="glass doc-card center">
+        <div class="glass doc-card center pricing">
           <span class="eyebrow"
-            ><span class="lang-en">Launch offer</span
-            ><span class="lang-fr">Offre de lancement</span></span
+            ><span class="lang-en">One-time purchase</span
+            ><span class="lang-fr">Achat unique</span></span
           >
-          <h2 style="margin: 18px 0 12px">
+          <h2>
             <span class="lang-en">One price. Yours for life.</span
             ><span class="lang-fr">Un prix. À vous pour la vie.</span>
           </h2>
-          <div class="price" style="margin-bottom: 12px">
+          <div class="price">
             <span class="now">29,99 €</span>
             <span class="unit"
               ><span class="lang-en">lifetime</span
               ><span class="lang-fr">à vie</span></span
             >
           </div>
-          <p style="color: var(--ink60); margin: 0 auto; max-width: 520px">
+          <p class="price-note">
             <span class="lang-en"
-              >A single, non-consumable purchase unlocks the full content. No
-              subscription. Restore it on any of your devices.</span
+              >One-time payment, no subscription. Lifetime access, future
+              updates included. Restore it on your other devices of the same
+              platform (same Apple ID or Google account).</span
             ><span class="lang-fr"
-              >Un achat unique, non consommable, débloque tout le contenu. Aucun
-              abonnement. Restaurez-le sur tous vos appareils.</span
+              >Paiement unique, sans abonnement. Accès à vie, mises à jour
+              futures incluses. Restaurable sur vos autres appareils de la même
+              plateforme (même identifiant Apple ou compte Google).</span
+            >
+          </p>
+
+          <div class="plans">
+            <div class="plan">
+              <h3>
+                <span class="lang-en">Free</span
+                ><span class="lang-fr">Gratuit</span>
+              </h3>
+              <ul class="lang-en">
+                <li>5-question diagnostic</li>
+                <li>NordPay scenario</li>
+                <li>Domains 1 to 3</li>
+                <li>Mock exam #1</li>
+                <li>Journey steps 1 to 3</li>
+                <li>Flashcards and mistakes review</li>
+              </ul>
+              <ul class="lang-fr">
+                <li>Diagnostic de 5 questions</li>
+                <li>Scénario NordPay</li>
+                <li>Domaines 1 à 3</li>
+                <li>Examen blanc n°1</li>
+                <li>Étapes 1 à 3 du parcours</li>
+                <li>Flashcards et révision des erreurs</li>
+              </ul>
+            </div>
+            <div class="plan premium">
+              <h3>Premium</h3>
+              <ul class="lang-en">
+                <li>All 9 domains, 500 questions</li>
+                <li>All 6 mock exams</li>
+                <li>All 12 journey steps</li>
+              </ul>
+              <ul class="lang-fr">
+                <li>Les 9 domaines, 500 questions</li>
+                <li>Les 6 examens blancs</li>
+                <li>Les 12 étapes du parcours</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="fineprint">
+            <span class="lang-en"
+              >Price shown in euros. The App Store or Google Play displays the
+              exact price in your currency before you buy. Access is immediate:
+              by purchasing, you agree to waive the 14-day withdrawal right for
+              digital content.</span
+            ><span class="lang-fr"
+              >Prix indiqué en euros. L'App Store ou Google Play affiche le prix
+              exact dans votre devise avant l'achat. L'accès est immédiat : en
+              achetant, vous renoncez au droit de rétractation de 14 jours
+              applicable aux contenus numériques.</span
             >
           </p>
         </div>

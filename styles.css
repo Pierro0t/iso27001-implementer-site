@@ -301,11 +301,6 @@ a.badge:hover {
   align-items: baseline;
   gap: 12px;
 }
-.price .old {
-  color: var(--ink40);
-  text-decoration: line-through;
-  font-size: 20px;
-}
 .price .now {
   font-size: 40px;
   font-weight: 800;
@@ -314,6 +309,83 @@ a.badge:hover {
 .price .unit {
   color: var(--ink60);
   font-size: 15px;
+}
+
+.pricing h2 {
+  margin: 18px 0 12px;
+}
+.pricing .price {
+  margin-bottom: 12px;
+}
+.pricing .price-note {
+  color: var(--ink60);
+  margin: 0 auto;
+  max-width: 560px;
+}
+.pricing .fineprint {
+  color: var(--ink50);
+  font-size: 13px;
+  margin: 14px auto 0;
+  max-width: 560px;
+}
+
+/* Gratuit / Premium */
+.plans {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 28px auto 0;
+  max-width: 680px;
+  text-align: left;
+}
+.plan {
+  padding: 18px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.5);
+}
+.plan h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.plan ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink75);
+  font-size: 15px;
+}
+.plan.premium {
+  border-color: rgba(12, 138, 125, 0.35);
+  background: rgba(12, 138, 125, 0.07);
+}
+
+/* Langues */
+.langs {
+  margin: 36px auto 0;
+  max-width: 780px;
+  text-align: center;
+}
+.langs p {
+  color: var(--ink60);
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+.lang-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lang-list li {
+  font-size: 14px;
+  color: var(--ink75);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.55);
 }
 
 /* ---------- Legal / prose pages ---------- */
@@ -388,7 +460,7 @@ a.badge:hover {
   font-weight: 400;
 }
 .faq details[open] summary::after {
-  content: "\2013";
+  content: "\2212";
 }
 .faq details > *:not(summary) {
   color: var(--ink60);
@@ -403,6 +475,15 @@ a.badge:hover {
   padding: 40px;
   max-width: 560px;
   margin: 0 auto;
+}
+.support-head h2 {
+  margin-top: 8px;
+}
+.contact-card.spaced {
+  margin-bottom: 40px;
+}
+.contact-card .intro {
+  color: var(--ink60);
 }
 .contact-card .mail {
   font-size: clamp(18px, 3vw, 24px);

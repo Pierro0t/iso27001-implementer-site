@@ -2,14 +2,21 @@
 <html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self' 'sha256-TtmemEMkpwelmXj3AgzF0YO4ULVsfWhvffLCbqWmMT4='; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Support · ISO 27001 Implementer</title>
     <meta
       name="description"
-      content="Support and contact for ISO 27001 Implementer. Contact, FAQ, restore purchase and refunds."
+      content="Support and contact for ISO 27001 Implementer: restore purchase, refunds, your data, reminders, languages and FAQ."
     />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <meta name="theme-color" content="#F3F6F6" />
+    <!-- No-flash : fixe la langue avant le premier paint. Contenu identique sur
+         toutes les pages : il est autorisé par son hash sha256 dans la CSP. -->
     <script>
       (function () {
         try {
@@ -49,8 +56,8 @@
 
     <main>
       <section class="wrap doc">
-        <div class="section-head">
-          <h2 style="margin-top: 8px">
+        <div class="section-head support-head">
+          <h2>
             <span class="lang-en">Support</span
             ><span class="lang-fr">Aide &amp; support</span>
           </h2>
@@ -63,8 +70,8 @@
           </p>
         </div>
 
-        <div class="glass contact-card" style="margin-bottom: 40px">
-          <p class="mt0" style="color: var(--ink60)">
+        <div class="glass contact-card spaced">
+          <p class="mt0 intro">
             <span class="lang-en">Questions, bugs or suggestions? Email us:</span
             ><span class="lang-fr"
               >Questions, bugs ou suggestions ? Écrivez-nous :</span
@@ -82,14 +89,24 @@
               ><span class="lang-fr">Comment restaurer mon achat Premium ?</span>
             </summary>
             <p class="lang-en">
-              Premium is a one-time purchase tied to your Apple or Google account.
-              On a new device, sign in with the same account, open the app and use
-              "Restore purchase" in the paywall or in Settings.
+              Premium is a one-time purchase tied to the platform where you
+              bought it: your Apple ID for the App Store, your Google account for
+              Google Play. On another device of the same platform, sign in with
+              the same account, open the app and tap “Restore purchase” on the
+              paywall or in Settings &gt; Premium. Restoring needs an internet
+              connection. A purchase made on the App Store cannot be restored on
+              Android, and a Google Play purchase cannot be restored on an iPhone
+              or iPad.
             </p>
             <p class="lang-fr">
-              Premium est un achat unique lié à votre compte Apple ou Google. Sur
-              un nouvel appareil, connectez-vous avec le même compte, ouvrez l'app
-              et utilisez « Restaurer l'achat » depuis le paywall ou les réglages.
+              Premium est un achat unique lié à la plateforme où vous l'avez
+              effectué : votre identifiant Apple pour l'App Store, votre compte
+              Google pour Google Play. Sur un autre appareil de la même
+              plateforme, connectez-vous avec le même compte, ouvrez l'app et
+              touchez « Restaurer l'achat » depuis le paywall ou dans Réglages
+              &gt; Premium. La restauration nécessite une connexion internet. Un
+              achat fait sur l'App Store ne se restaure pas sur Android, et un
+              achat Google Play ne se restaure pas sur iPhone ou iPad.
             </p>
           </details>
 
@@ -101,20 +118,28 @@
             <p class="lang-en">
               Payments and refunds are handled entirely by Apple and Google. To
               request a refund, use
-              <a href="https://reportaproblem.apple.com" rel="noopener"
+              <a
+                href="https://reportaproblem.apple.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 >reportaproblem.apple.com</a
               >
-              (App Store) or the Google Play order history. We have no access to
-              your payment details.
+              (App Store) or your Google Play order history. We have no access to
+              your payment details. A refunded purchase no longer unlocks
+              Premium.
             </p>
             <p class="lang-fr">
-              Les paiements et remboursements sont gérés intégralement par Apple et
-              Google. Pour demander un remboursement, utilisez
-              <a href="https://reportaproblem.apple.com" rel="noopener"
+              Les paiements et remboursements sont gérés intégralement par Apple
+              et Google. Pour demander un remboursement, utilisez
+              <a
+                href="https://reportaproblem.apple.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 >reportaproblem.apple.com</a
               >
-              (App Store) ou l'historique de commandes Google Play. Nous n'avons
-              aucun accès à vos données de paiement.
+              (App Store) ou votre historique de commandes Google Play. Nous
+              n'avons aucun accès à vos données de paiement. Un achat remboursé
+              ne débloque plus Premium.
             </p>
           </details>
 
@@ -124,14 +149,94 @@
               ><span class="lang-fr">Mes données sont-elles envoyées quelque part ?</span>
             </summary>
             <p class="lang-en">
-              No. There is no account and no tracking. Your progress stays on your
-              device. See our
+              Your progress and preferences stay on your device: there is no
+              account, no analytics and no advertising tracker. Only purchases
+              leave the device: they go through Apple or Google, and through
+              RevenueCat, which validates them using an anonymous purchase ID.
+              Nothing else is sent. See our
               <a href="privacy.html">Privacy Policy</a> for details.
             </p>
             <p class="lang-fr">
-              Non. Aucun compte, aucun pistage. Votre progression reste sur votre
-              appareil. Voir notre
+              Votre progression et vos préférences restent sur votre appareil :
+              aucun compte, aucun outil d'analyse, aucun traceur publicitaire.
+              Seuls les achats quittent l'appareil : ils passent par Apple ou
+              Google, et par RevenueCat, qui les valide avec un identifiant
+              d'achat anonyme. Rien d'autre n'est envoyé. Voir notre
               <a href="privacy.html">politique de confidentialité</a>.
+            </p>
+          </details>
+
+          <details class="glass">
+            <summary>
+              <span class="lang-en">How do I request deletion of my purchase data?</span
+              ><span class="lang-fr"
+                >Comment demander la suppression de mes données d'achat ?</span
+              >
+            </summary>
+            <p class="lang-en">
+              Write to
+              <a href="mailto:pidotis+ISO27001@gmail.com"
+                >pidotis+ISO27001@gmail.com</a
+              >
+              quoting the purchase ID shown in the app under Settings &gt;
+              Premium. This ID is the only way to find your purchase record, as
+              we hold no name or account. Your progress, stored on your device
+              only, is deleted by uninstalling the app.
+            </p>
+            <p class="lang-fr">
+              Écrivez à
+              <a href="mailto:pidotis+ISO27001@gmail.com"
+                >pidotis+ISO27001@gmail.com</a
+              >
+              en indiquant l'identifiant d'achat affiché dans l'app sous Réglages
+              &gt; Premium. Cet identifiant est le seul moyen de retrouver votre
+              achat, puisque nous ne détenons ni nom ni compte. Votre
+              progression, stockée uniquement sur votre appareil, est supprimée
+              en désinstallant l'app.
+            </p>
+          </details>
+
+          <details class="glass">
+            <summary>
+              <span class="lang-en">I keep getting study reminders. How do I stop them?</span
+              ><span class="lang-fr"
+                >Je reçois toujours des rappels. Comment les arrêter ?</span
+              >
+            </summary>
+            <p class="lang-en">
+              Since version 1.0.1, reminders run only until your exam date and
+              stop after it. To stop them sooner, turn them off in the app
+              (Settings &gt; Reminders) or in your phone's notification
+              settings. If reminders continue after your exam date, update the
+              app to the latest version and open it once: it then reschedules
+              them according to your exam date.
+            </p>
+            <p class="lang-fr">
+              Depuis la version 1.0.1, les rappels ne courent que jusqu'à votre
+              date d'examen et s'arrêtent ensuite. Pour les arrêter plus tôt,
+              désactivez-les dans l'app (Réglages &gt; Rappels) ou dans les
+              réglages de notifications de votre téléphone. Si des rappels
+              continuent après votre date d'examen, mettez l'app à jour puis
+              ouvrez-la une fois : elle reprogramme alors les rappels selon votre
+              date d'examen.
+            </p>
+          </details>
+
+          <details class="glass">
+            <summary>
+              <span class="lang-en">Does the app work offline?</span
+              ><span class="lang-fr">L'app fonctionne-t-elle hors ligne ?</span>
+            </summary>
+            <p class="lang-en">
+              Yes for practice: questions, mock exams, the journey, flashcards
+              and mistakes review all work without a connection. Buying and
+              restoring Premium need an internet connection.
+            </p>
+            <p class="lang-fr">
+              Oui pour l'entraînement : questions, examens blancs, parcours,
+              flashcards et révision des erreurs fonctionnent sans connexion.
+              L'achat et la restauration de Premium nécessitent une connexion
+              internet.
             </p>
           </details>
 
@@ -158,12 +263,21 @@
               ><span class="lang-fr">Comment changer la langue ?</span>
             </summary>
             <p class="lang-en">
-              The app is bilingual EN/FR with an instant in-app switch in Settings.
-              This website has the EN/FR toggle in the top-right corner.
+              The app is available in 13 languages: English, Français, Español,
+              العربية, Português (Brasil), Português (Portugal), Deutsch, Türkçe,
+              Italiano, Bahasa Indonesia, Polski, 日本語 and Nederlands. It
+              starts in your device language when available, and you can switch
+              instantly in Settings. This website is in English and French, with
+              the EN/FR toggle in the top-right corner.
             </p>
             <p class="lang-fr">
-              L'app est bilingue EN/FR avec un basculement instantané dans les
-              réglages. Ce site propose le sélecteur EN/FR en haut à droite.
+              L'app est disponible en 13 langues : English, Français, Español,
+              العربية, Português (Brasil), Português (Portugal), Deutsch, Türkçe,
+              Italiano, Bahasa Indonesia, Polski, 日本語 et Nederlands. Elle
+              démarre dans la langue de votre appareil si elle est proposée, et
+              vous pouvez en changer instantanément dans les réglages. Ce site
+              est en anglais et en français, avec le sélecteur EN/FR en haut à
+              droite.
             </p>
           </details>
 
@@ -173,13 +287,17 @@
               ><span class="lang-fr">Comment réinitialiser ma progression ?</span>
             </summary>
             <p class="lang-en">
-              Open Settings in the app and use "Reset progress". This clears your
-              answers, mistakes, exam scores and journey locally on the device.
+              Open Settings in the app and use “Reset progress”. This erases your
+              answers, mistakes, exam scores, journey progress and flashcard
+              piles on the device. Your name, exam date, language, Premium and
+              preferences are kept.
             </p>
             <p class="lang-fr">
               Ouvrez les réglages dans l'app et utilisez « Réinitialiser la
-              progression ». Cela efface vos réponses, erreurs, scores d'examens et
-              parcours, localement sur l'appareil.
+              progression ». Cela efface vos réponses, erreurs, scores
+              d'examens, avancement du parcours et piles de flashcards sur
+              l'appareil. Votre prénom, votre date d'examen, la langue, Premium
+              et vos préférences sont conservés.
             </p>
           </details>
         </div>
@@ -210,6 +328,21 @@
             ><span class="lang-fr">Mentions légales</span></a
           >
         </div>
+        <p class="disclaimer">
+          <span class="lang-en"
+            >Independent study tool. Not affiliated with, endorsed or approved by
+            ISO, IEC, PECB or any certification body. "ISO/IEC 27001" is used
+            solely to describe the subject matter of the training content. All
+            questions are original. Readiness is an internal estimate, not a pass
+            guarantee.</span
+          ><span class="lang-fr"
+            >Outil d'étude indépendant. Non affilié à, ni approuvé par ISO, IEC,
+            PECB ou tout autre organisme de certification. « ISO/IEC 27001 » est
+            utilisé uniquement pour décrire le sujet du contenu de formation.
+            Toutes les questions sont originales. La préparation est une
+            estimation interne, pas une garantie de réussite.</span
+          >
+        </p>
         <p class="copy">© 2026 Pidotis · pidotis+ISO27001@gmail.com</p>
       </div>
     </footer>
